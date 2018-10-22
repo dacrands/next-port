@@ -21,6 +21,7 @@ export default () =>
         </p>
         <p>As a front-end develoer, I focus on accessibility, performance, and beauty, in that order.</p>
         <p>As a back-end develoer, I am all about security.</p>
+        <br/>
         <div>
           <a href="#about">
             Learn more &rsaquo;

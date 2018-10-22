@@ -1,6 +1,6 @@
 $dark: rgb(20, 20, 20);
 $light: #dddde7;
-$med: #abacb8;
+$med: #bdbdc9;
 
 html {
   margin: 0;
@@ -107,6 +107,11 @@ body {
   color: $dark;
   // margin-top: rem;
   padding-top: 3rem;
+  header {
+    max-height: 20vh;
+    max-width: 500px;
+    margin: 0 auto;
+  }
   section {
     margin-top: 3rem;
     display: flex;
@@ -117,15 +122,28 @@ body {
 
 .card {
   max-width: 500px;
-  border: 1px solid $med;
+  // border: 1px solid $med;
   margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   border-radius: 3px;
-  div {
-    padding: .45rem;
-  }
+
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  a {
+    span {
+      display: inline-block;
+      transition: all 200ms ease;
+    }
+    text-decoration: none;
+    &:hover {
+      span {
+        color: rgb(0, 153, 255);
+        margin-left: .25rem;
+        // padding-right: 1re;
+      }      
+    }
   }
 }
