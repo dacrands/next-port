@@ -1,5 +1,5 @@
 import Nav from '../components/Nav';
-import '../static/main.scss'
+import '../static/styles/main.scss'
 
 // import FlaskLogo from '../static/images/flask-logo.svg';
 
