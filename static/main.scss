@@ -2,7 +2,12 @@ $dark: rgb(20, 20, 20);
 $light: #dddde7;
 $med: #abacb8;
 
-
+html {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
