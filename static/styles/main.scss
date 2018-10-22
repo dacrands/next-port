@@ -1,6 +1,9 @@
 $dark: rgb(20, 20, 20);
+$less-dark:rgb(79, 82, 95);
+$more-med:rgb(146, 149, 165);
 $light: #dddde7;
 $med: #bdbdc9;
+$action: rgb(23, 152, 238);
 
 html {
   margin: 0;
@@ -16,9 +19,16 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
 .font--light {
   font-weight: 100;
 }
+
+.more--med {
+  color: $action;
+}
+
 
 
 .container {
@@ -95,8 +105,8 @@ body {
     margin-right: 1rem;
     transition: all 200ms ease;
     &:hover {
-      color: rgb(23, 152, 238);
-      border: 1px solid rgb(23, 152, 238);      
+      color: $action;
+      border: 1px solid $action;      
     }
   }
 }
@@ -106,6 +116,9 @@ body {
   // margin-top: rem;
   margin-bottom: -5rem;
   padding-top: 3rem;
+  p {
+    color: $less-dark;
+  }
   header {
     max-height: 20vh;
     max-width: 500px;
@@ -161,32 +174,83 @@ body {
 .about__skew {
   height: 100vh; 
   width: 200%;
-  background: rgb(79, 82, 95);
+  background: $less-dark;
   // max-width: 300px;
   // transform: rotate(10deg);
   position: absolute;
   z-index: -2;
   transform: skewY(7deg);
-  // background: $dark; 
+  // background: $dark;   
 }
 
 .about {
   // margin-top: -5rem;
   margin: 0 auto;
   max-width: 500px;
+  h1 {
+    color: white;
+  }
 }
 
-.about__logos {
-  // text-align: center;
-  margin-top: 5rem;
-  display: flex;
-  flex-flow: wrap;
-  // justify-content: space-between;
-}
+// .about__logos {
+//   // text-align: center;
+//   // margin-top: 5rem;
+//   // display: flex;
+//   // flex-flow: wrap;
+//   // justify-content: space-between;
+// }
 
 .about__svg {
   max-height: 80px;
   width: 80px;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin-right: 4px;
+  // margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.marquee {
+  // max-width: 1400px;
+  margin: 0 auto;
+  // outline: 2px solid orange;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.marquee__inner {
+  width: 1848px;
+  position: absolute;
+  display: block;
+  animation: slider 20s linear infinite;
+}
+
+.marquee__span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes slider {
+  0% { left: 0; }
+  100% { left: -924px; }
+}
+
+.about__content {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;  
+  h3 {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.about__content-list {
+  text-align: center;  
+  ul {
+    list-style: none;
+    padding: 0;
+    // padding-left: 2rem;
+  }
 }

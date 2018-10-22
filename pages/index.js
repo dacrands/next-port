@@ -15,8 +15,8 @@ export default () =>
     <div className="landing__skew"></div>
     <div className="landing">
       <div>
-        <h1>David Crandall</h1>
-        <h2 className="font--light">Full-stack Web Developer</h2>
+        <h1 className="more--med">David Crandall</h1>
+        <h2 className="font--light ">Full-stack Web Developer</h2>
         <p>I build websites that make sense. From email-authentication to
           responsive web-design, I can do it all.
         </p>
