@@ -33,6 +33,7 @@ body {
   top: 0;
   width: 100%;
   background: $dark;
+  z-index: 2;
 }
 
 .navbar__list {
@@ -53,7 +54,7 @@ body {
   // margin-bottom: 5rem;
   position: relative;
   height: 100vh;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 .landing__skew {
   height: 100vh; 
