@@ -1,9 +1,14 @@
 import Nav from '../components/Nav';
 import Projects from '../components/Projects';
-import '../static/main.scss'
+import '../static/main.scss';
+import Head from 'next/head';
 
 export default () =>
   <div>
+    <Head>
+      <title>David Crandall</title>
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+    </Head>
     <Nav />
     <div className="landing__container">
     <div className="landing__skew"></div>
