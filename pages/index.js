@@ -11,7 +11,7 @@ export default () =>
     </Head>
     <Nav />
     <div className="landing__container">
-    <div className="landing__skew"></div>
+    <div className="landing__skew">
     <div className="landing">
       <div>
         <h1>David Crandall</h1>
@@ -28,6 +28,7 @@ export default () =>
         </div>
       </div>
     </div>    
+    </div>
     </div>
     <div className="container">
       <Projects />
