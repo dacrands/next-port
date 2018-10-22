@@ -57,7 +57,7 @@ body {
 .landing__container {
   // margin-bottom: 5rem;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden !important;
 }
 .landing__skew {
   height: 100vh; 
@@ -80,7 +80,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   p {
     color: $med;
   }
