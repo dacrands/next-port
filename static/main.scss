@@ -57,6 +57,7 @@ body {
 .landing__container {
   // margin-bottom: 5rem;
   height: 100vh;
+  max-width: 100vw;
   overflow-x: hidden !important;
 }
 .landing__skew {
@@ -74,7 +75,6 @@ body {
 
 .landing{
   // margin: 0 auto;
-  width: 100vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
