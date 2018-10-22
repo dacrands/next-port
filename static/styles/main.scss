@@ -175,3 +175,18 @@ body {
   margin: 0 auto;
   max-width: 500px;
 }
+
+.about__logos {
+  // text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: wrap;
+  // justify-content: space-between;
+}
+
+.about__svg {
+  max-height: 80px;
+  width: 80px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}

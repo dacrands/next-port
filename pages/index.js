@@ -1,7 +1,7 @@
 import Nav from '../components/Nav';
 import Projects from '../components/Projects';
 import About from '../components/About';
-import '../static/main.scss';
+import '../static/styles/main.scss';
 import Head from 'next/head';
 
 export default () =>
