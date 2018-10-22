@@ -5,7 +5,7 @@ const Nav = () => (
   <div>
     <Head>
       <title>David Crandall</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width" />
     </Head>
     <nav className="navbar">
     <ul className="navbar__list">
