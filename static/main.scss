@@ -58,6 +58,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 .landing__skew {
   height: 100vh; 
   width: 200%;
@@ -66,10 +67,8 @@ body {
   position: absolute;
   z-index: -2;
   transform: skewY(7deg);
-  background: $dark;
-  
+  background: $dark;  
 }
-
 
 .landing{
   // margin: 0 auto;
@@ -92,13 +91,12 @@ body {
     background: none;
     border: 1px solid $med;
     border-radius: 3px;
-    padding: 0.25rem 0.45rem;    
-    // cursor: pointer;
+    padding: 0.25rem 0.45rem;        
+    margin-right: 1rem;
     transition: all 200ms ease;
     &:hover {
-      color: $dark;
-      border: 1px solid dark;
-      background: $light;
+      color: rgb(23, 152, 238);
+      border: 1px solid rgb(23, 152, 238);      
     }
   }
 }
@@ -106,6 +104,7 @@ body {
 .projects{
   color: $dark;
   // margin-top: rem;
+  margin-bottom: -5rem;
   padding-top: 3rem;
   header {
     max-height: 20vh;
@@ -123,7 +122,7 @@ body {
 .card {
   max-width: 500px;
   // border: 1px solid $med;
-  margin-right: 2rem;
+  // margin-right: 2rem;
   margin-bottom: 5rem;
   border-radius: 3px;
 
@@ -136,6 +135,8 @@ body {
     span {
       display: inline-block;
       transition: all 200ms ease;
+      margin-right: 1.5rem;
+      margin-bottom: 2rem;
     }
     text-decoration: none;
     &:hover {
@@ -146,4 +147,31 @@ body {
       }      
     }
   }
+}
+
+.about__container {
+  position: relative;
+  padding-top: 20rem;
+  overflow: hidden;
+  // height: 100vh;
+  // overflow-x: hidden;
+  // overflow-y: ;
+}
+
+.about__skew {
+  height: 100vh; 
+  width: 200%;
+  background: rgb(79, 82, 95);
+  // max-width: 300px;
+  // transform: rotate(10deg);
+  position: absolute;
+  z-index: -2;
+  transform: skewY(7deg);
+  // background: $dark; 
+}
+
+.about {
+  // margin-top: -5rem;
+  margin: 0 auto;
+  max-width: 500px;
 }

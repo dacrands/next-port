@@ -1,5 +1,6 @@
 import Nav from '../components/Nav';
 import Projects from '../components/Projects';
+import About from '../components/About';
 import '../static/main.scss';
 import Head from 'next/head';
 
@@ -26,6 +27,9 @@ export default () =>
           <a href="#about">
             Learn more &rsaquo;
           </a>
+          <a href="#about">
+            Blog &rsaquo;
+          </a>
         </div>
       </div>
     </div>    
@@ -33,5 +37,8 @@ export default () =>
     <div className="container">
       <Projects />
     </div>
+    {/* <div className="container"> */}
+      <About />
+    {/* </div> */}
     
   </div>
