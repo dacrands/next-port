@@ -1,6 +1,7 @@
 import Nav from '../components/Nav';
 import Projects from '../components/Projects';
 import About from '../components/About';
+import Contact from '../components/Contact';
 import '../static/styles/main.scss';
 import Head from 'next/head';
 
@@ -15,7 +16,7 @@ export default () =>
     <div className="landing__skew"></div>
     <div className="landing">
       <div>
-        <h1 className="more--med">David Crandall</h1>
+        <h1 className="primary">David Crandall</h1>
         <h2 className="font--light ">Full-stack Web Developer</h2>
         <p>I build websites that make sense. From email-authentication to
           responsive web-design, I can do it all.
@@ -40,5 +41,9 @@ export default () =>
     {/* <div className="container"> */}
       <About />
     {/* </div> */}
+    <div>
+    <Contact />
+    </div>
+
     
   </div>

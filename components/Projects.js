@@ -1,7 +1,7 @@
 const Projects = () => (
   <div className="projects" id="about">
     <header>
-      <h1>Projects</h1>
+      <h1 className="primary">Projects</h1>
       <h2 className="font--light">Here is a taste of what I do</h2>
     </header>
     <section>
