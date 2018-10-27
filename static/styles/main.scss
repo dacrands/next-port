@@ -29,6 +29,9 @@ body {
 .primary{
   color: $action;
 }
+.less--dark{
+  color: $less-dark;
+}
 
 
 .button {
@@ -58,6 +61,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  text-align: center;
   max-width: 100%;
   background: $dark;
   z-index: 2;
@@ -65,7 +69,11 @@ body {
 
 .navbar__list {
   // outline: 2px dashed orange;
-  float: right;
+  max-width: 500px;
+  margin:  0 auto;
+  // float: right;
+  display: flex;
+  justify-content: space-between;
   a {
     color: $light;
     padding: .5em;
@@ -133,29 +141,35 @@ body {
   }
   header {
     max-height: 20vh;
-    max-width: 500px;
+    // max-width: 500px;
     margin: 0 auto;
   }
   section {
     margin-top: 3rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
 }
 
 .card {
-  max-width: 500px;
+  // max-width: 700px;
   // border: 1px solid $med;
   // margin-right: 2rem;
-  margin-bottom: 5rem;
+  // margin-bottom: 5rem;
+  // margin: 1rem 0;
+  margin: 3rem 0;
   border-radius: 3px;
-
-  img {
-    max-width: 100%;
-    height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  grid-auto-rows: 1fr;
+  // align-items: center;
+  // justify-items: center;
+  h3 {
+    margin-top: 0;
   }
-
   a {
     span {
       display: inline-block;
@@ -166,11 +180,28 @@ body {
     text-decoration: none;
     &:hover {
       span {
-        color: rgb(0, 153, 255);
+        // color: rgb(0, 153, 255);
         margin-left: .25rem;
+        margin-right: 1.25rem;
         // padding-right: 1re;
       }      
     }
+  }
+}
+
+.card__img {
+  // margin-right: 3rem;  
+  // max-width: 200px;
+  // max-height: 200px;
+  min-height: 300px;
+  // min-width: 300px;
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: top center;
+  img {    
+    max-width: 500px;
+    height: auto;
+    
   }
 }
 
@@ -179,14 +210,14 @@ body {
   position: relative;
   padding-top: 20rem;
   overflow: hidden;
-  min-height: 70vh; 
+  min-height: 80vh; 
 }
 
 .about__skew {
   // outline: 4px solid red;
-  min-height: 70vh; 
+  min-height: 80vh; 
   width: 200%;
-  background: $less-dark;  
+  background: $action;  
   position: absolute;
   z-index: -2;
   transform: skewY(5deg);   
@@ -194,10 +225,10 @@ body {
 
 .about {
   margin: 0 auto;
-  max-width: 500px;
-  h1 {
-    color: white;
-  }
+  max-width: 720px;
+  
+  color: white;
+  
 }
 
 .about__svg {
