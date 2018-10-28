@@ -18,6 +18,7 @@ const Landing = () => (
               <div class="wheel">
               </div>
             </div>
+            <p>Scroll</p>
           </div>
           {/* <a href="#projects">
             Portfolio &rsaquo;

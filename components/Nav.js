@@ -8,6 +8,7 @@ const Nav = () => (
       <Link href="#projects"><a>Portfolio</a></Link>
       <Link href="#skills"><a>Skills</a></Link>      
       <Link href="#contact"><a>Contact</a></Link>                
+      <a href="https://dacrands.github.io/" target="_blank">Blog</a>             
     </ul>
   </nav>  
 )
