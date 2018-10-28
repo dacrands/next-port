@@ -45,6 +45,7 @@ const About = () => (
               <ul>
                 <li>Python</li>
                 <li>JavaScript</li>
+                <li>NodeJS</li>
                 <li>HTML</li>
                 <li>CSS</li>
               </ul>
@@ -52,8 +53,7 @@ const About = () => (
 
             <div className="about__content-list">
               <h3 className="">Libraries</h3>
-              <ul>
-                <li>NodeJS</li>
+              <ul>                
                 <li>Flask</li>
                 <li>React</li>
                 <li>Redux</li>
@@ -64,6 +64,7 @@ const About = () => (
               <h3 className="">Tools</h3>
               <ul>
                 <li>Git/Github</li>
+                <li>Digital Ocean</li>
                 <li>Heroku</li>
                 <li>Postman</li>
                 <li>Webpack</li>
