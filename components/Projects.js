@@ -1,7 +1,7 @@
 const Projects = () => (
-  <div className="projects" id="about">
+  <div className="projects" id="projects">
     <header>
-      <h1 className="primary">Projects</h1>
+      <h1 className="primary">Portfolio</h1>
       <h2 className="font--light less--dark">Here is a taste of what I do</h2>
     </header>
     <section>
@@ -60,6 +60,23 @@ const Projects = () => (
             supports <strong>YAML front matter</strong>.
           </p>
           <a href="">GatbsyJS Blog <span>&rsaquo;</span></a>
+          {/* <br /> */}
+          <a href="">Github Repo <span>&rsaquo;</span></a>
+        </div>
+      </div>
+     <div className="card">
+        <div style={{backgroundImage:"url(https://i.imgur.com/7SIlmAJ.jpg)"}} className="card__img">
+          {/* <img src="https://i.imgur.com/a7pKgWc.jpg" alt="flask frame" /> */}
+        </div>        
+        <div>
+          <h3>New York Times App</h3>                    
+          <p><em>React, Redux, Responsive Web Design (no CSS libraries), 
+          Semantic HTML, ARIA, React static-site, styled-components</em></p>               
+          <p>
+            <strong>React</strong> and <strong>Redux</strong> application Features a <strong>markdown blog</strong> that 
+            supports <strong>YAML front matter</strong>.
+          </p>
+          <a href="">NYT App <span>&rsaquo;</span></a>
           {/* <br /> */}
           <a href="">Github Repo <span>&rsaquo;</span></a>
         </div>

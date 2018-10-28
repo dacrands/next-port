@@ -19,16 +19,16 @@ export default () =>
         <h1 className="primary">David Crandall</h1>
         <h2 className="font--light ">Full-stack Web Developer</h2>
         <p>I build websites that make sense. From email-authentication to
-          responsive web-design, I can do it all.
+          responsive web-design, I love all aspects of building a website.
         </p>
-        <p>As a front-end develoer, I focus on accessibility, performance, and beauty, in that order.</p>
-        <p>As a back-end develoer, I am all about security.</p>
+        <p>As a front-end developer, I focus on accessibility, performance, and beauty.
+          As a back-end developer, I am all about security.</p>
         <br/>
         <div>
-          <a href="#about">
-            Learn more &rsaquo;
+          <a href="#projects">
+            Portfolio &rsaquo;
           </a>
-          <a href="#about">
+          <a href="https://dacrands.github.io">
             Blog &rsaquo;
           </a>
         </div>

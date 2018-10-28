@@ -109,6 +109,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   p {
     color: $med;
   }
@@ -167,6 +168,9 @@ body {
   grid-auto-rows: 1fr;
   // align-items: center;
   // justify-items: center;
+  strong {
+    color: $action;
+  }
   h3 {
     margin-top: 0;
   }
@@ -198,11 +202,6 @@ body {
   background-size: contain;  
   background-repeat: no-repeat;
   background-position: top center;
-  img {    
-    max-width: 500px;
-    height: auto;
-    
-  }
 }
 
 .about__container {
@@ -313,5 +312,14 @@ body {
 
   input, textarea {
     margin-top: .45rem;
+    // border-radius: 2px;
+  }
+}
+
+
+@media (max-width:700px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
