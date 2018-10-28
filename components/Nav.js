@@ -9,8 +9,7 @@ const Nav = () => (
       <Link href="#skills"><a>Skills</a></Link>      
       <Link href="#contact"><a>Contact</a></Link>                
     </ul>
-  </nav>
-  
+  </nav>  
 )
 
 export default Nav;

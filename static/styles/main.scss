@@ -10,17 +10,15 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
   padding-top: 40px;
-  color: $light;
   font-size: 1.15rem;
   line-height: 120%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
 
 .font--light {
   font-weight: 100;
@@ -29,10 +27,10 @@ body {
 .primary{
   color: $action;
 }
+
 .less--dark{
   color: $less-dark;
 }
-
 
 .button {
   background: $action;
@@ -47,7 +45,6 @@ body {
     background: $dark-action;
   }
 }
-
 
 .container {
   max-width: 960px;
@@ -85,7 +82,6 @@ body {
   }
 }
 
-
 .landing__container {
   // margin-bottom: 5rem;
   position: relative;
@@ -111,6 +107,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  h2 {
+    color: $light;
+  }
   p {
     color: $med;
   }
@@ -314,6 +313,35 @@ body {
   input, textarea {
     margin-top: .45rem;
     // border-radius: 2px;
+  }
+}
+
+.footer {      
+  background: $dark;
+  color: $light;
+  margin: 0;
+  padding: 0.45rem;  
+  text-align: center;
+  .container {
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: $light;
+    &:hover {
+      color: $action;
+    }
+  }
+  ul {
+    margin: 0.45rem;
+    list-style: none;    
+  }
+  li {
+    display: inline;
   }
 }
 
