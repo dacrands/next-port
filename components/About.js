@@ -1,7 +1,7 @@
 const About = () => (
   <div>
     <div className="about__container" id="skills">
-      <div className="about__skew"></div>
+      <div className="about__skew" />
       <div className="container">
         <div className="about">
           <h1>Skills</h1>
@@ -53,7 +53,7 @@ const About = () => (
 
             <div className="about__content-list">
               <h3 className="">Libraries</h3>
-              <ul>                
+              <ul>
                 <li>Flask</li>
                 <li>React</li>
                 <li>Redux</li>
