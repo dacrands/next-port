@@ -8,9 +8,9 @@ const Contact = () => (
 
             Email
 
-          <input type="email" required />
+          <input type="email" id="email" required />
         </label>
-        <label htmlFor="textarea">
+        <label htmlFor="message">
 
 
           Message me!

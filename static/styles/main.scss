@@ -107,6 +107,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  // display: grid;
+  // grid-template-rows: 2fr 1fr;
+  // justify-items: center;
+  // align-items: center;
   h2 {
     color: $light;
   }
@@ -133,17 +137,23 @@ body {
 
 
 .mouse {
-  position: absolute;
+  // position: absolute;
+  position: relative;
+  margin-top: 4rem;
   height: 40px;
   width: 20px;
-  border: 2px solid $action;
-  left: 50%;
-  margin-left: -10px;
-  top: 65%;
-  border-radius: 40px;
+  border: 2px solid $action;  
+  border-radius: 40px;  
+  background: none;  
+  cursor: pointer;
   p {
-    margin-left: -50%;
+    position: absolute;
+    margin-left: -100%;
+    margin-top: 0;
+    animation: scroll 2s infinite;
+    text-align: center;
   }
+  
 }
 
 .mouse__container {

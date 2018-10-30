@@ -64,7 +64,7 @@ Responsive Web Design (no CSS libraries),
           </p>
           <p>
             {' '}
-            <strong>React</strong>
+          React
             {' '}
 
 
@@ -74,7 +74,7 @@ application designed and
 
 
             {' '}
-            <strong>Webpack</strong>
+          Webpack
 
 
 .
@@ -190,13 +190,13 @@ React, Redux, Responsive Web Design (no CSS libraries),
             </em>
           </p>
           <p>
-            <strong>React</strong>
+            React
             {' '}
 
 
 and
 
-            <strong>Redux</strong>
+           Redux
             {' '}
 
 

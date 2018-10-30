@@ -7,37 +7,37 @@ const Landing = () => (
         <h2 className="font--light ">Full-stack Web Developer</h2>
         <p>
 
-
-I build websites that make sense. From email-authentication to
-          responsive web-design, I love all aspects of building a website.
-
-
-        </p>
-        <p>
-
-
-As a front-end developer, I focus on accessibility, performance, and beauty.
+As a front-end developer, I focus on accessibility, performance, and responsive-design.
           As a back-end developer, I am all about security.
+{/* I build websites that make sense. From email-authentication to
+          responsive web-design, I love all aspects of building a website. */}
 
 
         </p>
-        <br />
-        <div>
-          <div className="mouse">
+        {/* <p>
+
+
+
+
+
+        </p> */}
+      
+      </div>
+          <button className="mouse">
             <div className="mouse__container">
               <div className="line" />
               <div className="wheel" />
             </div>
             <p>Scroll</p>
-          </div>
+        
           {/* <a href="#projects">
             Portfolio &rsaquo;
           </a>
           <a href="https://dacrands.github.io">
             Blog &rsaquo;
           </a> */}
-        </div>
-      </div>
+        </button>
+      
     </div>
   </div>
 );
