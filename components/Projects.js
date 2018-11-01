@@ -4,8 +4,8 @@ const Projects = () => (
       <h1 className="primary">Portfolio</h1>
       <h2 className="font--light less--dark">Here is a taste of what I do</h2>
     </header>
-    <section className="">
-      <div>
+    <section>
+      <div className="card">
         <div style={{ backgroundImage: 'url(https://i.imgur.com/IT2RdUk.jpg)' }} className="card__img">
           {/* <img src="https://i.imgur.com/mXVg5NM.jpg" alt="flask frame" /> */}
         </div>
@@ -123,14 +123,13 @@ Responsive Web Design (no CSS libraries),
             </em>
           </p>
           <p>
-            <strong>GatsbyJS</strong>
-            {' '}
+            GatsbyJS
+            
 
 
 build hosted on
 
-            {' '}
-            <strong>gitpages</strong>
+         gitpages
 
 
 .

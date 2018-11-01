@@ -11,8 +11,8 @@ class Nav extends Component {
     const links = document.querySelectorAll('.navbar__list a')
     const views = document.querySelectorAll('.view')
     console.log(links);
-    if ('IntersectionObserver' in window ||
-    'IntersectionObserverEntry' in window ||
+    if ('IntersectionObserver' in window &&
+    'IntersectionObserverEntry' in window &&
     'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
     // load polyfill now    
       let observer = new IntersectionObserver(entries => {
