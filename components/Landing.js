@@ -1,7 +1,7 @@
 const Landing = () => (
   <div className="landing__container">
     <div className="landing__skew" />
-    <div className="landing">
+    <div className="landing view" id="home">
       <div>
         <h1 className="primary">David Crandall</h1>
         <h2 className="font--light ">Full-stack Web Developer</h2>

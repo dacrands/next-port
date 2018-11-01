@@ -1,6 +1,6 @@
 const About = () => (
   <div>
-    <div className="about__container" id="skills">
+    <div className="about__container view" id="skills">
       <div className="about__skew" />
       <div className="container">
         <div className="about">

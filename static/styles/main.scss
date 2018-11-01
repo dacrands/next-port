@@ -32,6 +32,10 @@ body {
   color: $less-dark;
 }
 
+.active {
+  text-decoration: underline !important;
+}
+
 .button {
   background: $action;
   padding: .5rem;

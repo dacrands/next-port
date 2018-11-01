@@ -1,5 +1,5 @@
 const Contact = () => (
-  <div className="contact" id="contact">
+  <div className="contact view" id="contact">
     <div className="container">
       <h1 className="primary">Contact</h1>
       <form className="form" action="">

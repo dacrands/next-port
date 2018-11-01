@@ -1,11 +1,11 @@
 const Projects = () => (
-  <div className="projects" id="projects">
+  <div className="projects view" id="projects">
     <header>
       <h1 className="primary">Portfolio</h1>
       <h2 className="font--light less--dark">Here is a taste of what I do</h2>
     </header>
-    <section>
-      <div className="card">
+    <section className="">
+      <div>
         <div style={{ backgroundImage: 'url(https://i.imgur.com/IT2RdUk.jpg)' }} className="card__img">
           {/* <img src="https://i.imgur.com/mXVg5NM.jpg" alt="flask frame" /> */}
         </div>
