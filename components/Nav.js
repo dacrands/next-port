@@ -11,29 +11,34 @@ class Nav extends Component {
     const links = document.querySelectorAll('.navbar__list a')
     const views = document.querySelectorAll('.view')
     console.log(links);
-    let observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          console.log(entry.target.clientHeight);
-          if (entry.intersectionRatio > 0.25) {
-            links.forEach(link => {        
-              console.log(entry.target.id)    
-              if (link.dataset.link == entry.target.id) {
-                  // link.style.color = "red";
-                  link.classList.add('active');                  
-              } else {
-                // link.style.color = "";
-                link.classList.remove('active');
-              }             
-            })
-            entry.target.unobserve;
-          }
-        
-      });
-    }, config);
+    if ('IntersectionObserver' in window ||
+    'IntersectionObserverEntry' in window ||
+    'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
+    // load polyfill now    
+      let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            console.log(entry.target.clientHeight);
+            if (entry.intersectionRatio > 0.25) {
+              links.forEach(link => {        
+                console.log(entry.target.id)    
+                if (link.dataset.link == entry.target.id) {
+                    // link.style.color = "red";
+                    link.classList.add('active');                  
+                } else {
+                  // link.style.color = "";
+                  link.classList.remove('active');
+                }             
+              })
+              entry.target.unobserve;
+            }
+          
+        });
+      }, config);
 
-    views.forEach(view => {
-      observer.observe(view)
-    });
+      views.forEach(view => {
+        observer.observe(view)
+      });
+    }
   }
 
   render() {
