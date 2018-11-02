@@ -6,21 +6,10 @@ const Landing = () => (
         <h1 className="primary">David Crandall</h1>
         <h2 className="font--light ">Full-stack Web Developer</h2>
         <p>
-
 As a front-end developer, I focus on accessibility, performance, and responsive-design.
           As a back-end developer, I am all about security.
-{/* I build websites that make sense. From email-authentication to
-          responsive web-design, I love all aspects of building a website. */}
-
-
         </p>
-        {/* <p>
 
-
-
-
-
-        </p> */}
       
       </div>
           <button className="mouse">

@@ -8,43 +8,41 @@ const config = {
 class Nav extends Component {
 
   componentDidMount() {
-    const links = document.querySelectorAll('.navbar__list a')
+    let linksObj = {}
+    const links = document.querySelectorAll('.navbar__list a')    
     const views = document.querySelectorAll('.view')
 
-    if ('IntersectionObserver' in window &&
-    'IntersectionObserverEntry' in window &&
-    'intersectionRatio' in window.IntersectionObserverEntry.prototype) { 
-      let observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {            
-            if (entry.intersectionRatio > 0.25) {
-              links.forEach(link => {           
-                if (link.dataset.link == entry.target.id) {                    
-                    link.classList.add('active');                  
-                } else {
-                  link.classList.remove('active');
-                }             
-              })
-              entry.target.unobserve;
-            }          
-        });
-      }, config);
+    links.forEach(link => {    
+      linksObj[link.dataset.link] = link;      
+    });
 
-      views.forEach(view => {
-        observer.observe(view)
-      });
-    } else {
+    // if ('IntersectionObserver' in window &&
+    // 'IntersectionObserverEntry' in window &&
+    // 'intersectionRatio' in window.IntersectionObserverEntry.prototype) { 
+    //   let observer = new IntersectionObserver(entries => {
+    //     entries.forEach(entry => {            
+    //         if (entry.intersectionRatio > 0.25) {
+    //           links.forEach(link => {           
+    //             if (link.dataset.link == entry.target.id) {                    
+    //                 link.classList.add('active');                  
+    //             } else {
+    //               link.classList.remove('active');
+    //             }             
+    //           })
+    //           entry.target.unobserve;
+    //         }          
+    //     });
+    //   }, config);
+
+    //   views.forEach(view => {
+    //     observer.observe(view)
+    //   });
+    // } else {
       window.addEventListener('load', () => {
-        views.forEach((view) => {          
+        views.forEach((view) => {                    
           if (view.getBoundingClientRect().top < 60) {
-            links.forEach(link => {           
-              if (link.dataset.link == view.id) {                    
-                link.classList.add('active');                  
-              } else {
-                link.classList.remove('active');
-              }             
-            })
-          } else {
-            view.classList.remove('active');
+            linksObj[view.id].classList.add('active')
+            return;
           }
         });
       });
@@ -59,12 +57,10 @@ class Nav extends Component {
                 link.classList.remove('active');
               }             
             })
-          } else {
-            view.classList.remove('active');
           }
         });
       });
-    }
+    // }
   }
 
   render() {

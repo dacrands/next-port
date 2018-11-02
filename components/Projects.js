@@ -16,11 +16,11 @@ const Projects = () => (
             <em>
 
 
-Email Authentication,
-          JSON Web Tokens, Postgresql, Heroku Hosting,
-           JinJa Templates
-
-
+              Email Authentication,
+                        JSON Web Tokens, Postgresql, Heroku Hosting,
+                         JinJa Templates
+              
+              
             </em>
           </p>
           <p>Once users verify their email address, they will have access to the SmartFrame — an app where they will be able to do the following:</p>
@@ -29,19 +29,19 @@ Email Authentication,
             <li>Easily add/remove stocks to appear in the scrolling stock-ticker</li>
             <li>Use Youtube embed codes to asynchronously set a background-video</li>
           </ul>
-          <a href="">
+          <a href="https://flaskframe.herokuapp.com">
 
 
-FlaskFrame
-
+            FlaskFrame
+            
             <span>&rsaquo;</span>
           </a>
           {/* <br /> */}
           <a href="">
 
 
-Github Repo
-
+            Github Repo
+            
             <span>&rsaquo;</span>
           </a>
         </div>
@@ -56,30 +56,16 @@ Github Repo
             <em className="less--dark">
 
 
-Responsive Web Design (no CSS libraries),
-          Semantic HTML, ARIA, Ajax, Asset lazy-loading
-
-
+              Responsive Web Design (no CSS libraries),
+                        Semantic HTML, ARIA, Ajax, Asset lazy-loading
+              
+              
             </em>
           </p>
           <p>
-            {' '}
-          React
-            {' '}
-
-
-application designed and
-          built for the STEM Department at Bergen Community College,
-          built using
-
-
-            {' '}
-          Webpack
-
-
-.
-
-
+            React application designed and
+            built for the STEM Department at Bergen Community College,
+            built using Webpack.t
           </p>
           <p>
 
@@ -91,16 +77,16 @@ application designed and
           <a href="">
 
 
-Bergen STEM
-
+            Bergen STEM
+            
             <span>&rsaquo;</span>
           </a>
           {/* <br /> */}
           <a href="">
 
 
-Github Repo
-
+            Github Repo
+            
             <span>&rsaquo;</span>
           </a>
         </div>
@@ -108,7 +94,6 @@ Github Repo
 
       <div className="card">
         <div style={{ backgroundImage: 'url(https://i.imgur.com/a7pKgWc.jpg)' }} className="card__img">
-          {/* <img src="https://i.imgur.com/a7pKgWc.jpg" alt="flask frame" /> */}
         </div>
         <div>
           <h3>Personal Blog</h3>
@@ -116,23 +101,20 @@ Github Repo
             <em>
 
 
-Responsive Web Design (no CSS libraries),
-          Semantic HTML, ARIA, React static-site, styled-components
-
-
+              Responsive Web Design (no CSS libraries),
+                        Semantic HTML, ARIA, React static-site, styled-components
+              
+              
             </em>
           </p>
           <p>
             GatsbyJS
-            
+
 
 
 build hosted on
 
-         gitpages
-
-
-.
+         gitpages.
 
 
           </p>
@@ -141,33 +123,29 @@ build hosted on
 
             Features a
 
-            <strong>markdown blog</strong>
+            markdown blog
             {' '}
 
 
-that
-            supports
-
-            <strong>YAML front matter</strong>
-
-
-.
-
-
+            that
+                        supports
+                        YAML front matter.
+            
+            
           </p>
           <a href="">
 
 
-GatbsyJS Blog
-
+            GatbsyJS Blog
+            
             <span>&rsaquo;</span>
           </a>
           {/* <br /> */}
           <a href="">
 
 
-Github Repo
-
+            Github Repo
+            
             <span>&rsaquo;</span>
           </a>
         </div>
@@ -182,33 +160,27 @@ Github Repo
             <em>
 
 
-React, Redux, Responsive Web Design (no CSS libraries),
-          Semantic HTML, ARIA, React static-site, styled-components
-
-
+              React, Redux, Responsive Web Design (no CSS libraries),
+                        Semantic HTML, ARIA, React static-site, styled-components
+              
+              
             </em>
           </p>
           <p>
             React
-            {' '}
+
 
 
 and
 
-           Redux
-            {' '}
-
-
-application Features a
-
-            <strong>markdown blog</strong>
-            {' '}
+          Redux
+application Features a markdown blog
 
 
 that
             supports
 
-            <strong>YAML front matter</strong>
+            YAML front matter
 
 
 .
@@ -218,16 +190,16 @@ that
           <a href="">
 
 
-NYT App
-
+            NYT App
+            
             <span>&rsaquo;</span>
           </a>
           {/* <br /> */}
           <a href="">
 
 
-Github Repo
-
+            Github Repo
+            
             <span>&rsaquo;</span>
           </a>
         </div>
