@@ -10,33 +10,59 @@ class Nav extends Component {
   componentDidMount() {
     const links = document.querySelectorAll('.navbar__list a')
     const views = document.querySelectorAll('.view')
-    console.log(links);
+
     if ('IntersectionObserver' in window &&
     'IntersectionObserverEntry' in window &&
     'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
     // load polyfill now    
       let observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            console.log(entry.target.clientHeight);
+        entries.forEach(entry => {            
             if (entry.intersectionRatio > 0.25) {
-              links.forEach(link => {        
-                console.log(entry.target.id)    
-                if (link.dataset.link == entry.target.id) {
-                    // link.style.color = "red";
+              links.forEach(link => {           
+                if (link.dataset.link == entry.target.id) {                    
                     link.classList.add('active');                  
                 } else {
-                  // link.style.color = "";
                   link.classList.remove('active');
                 }             
               })
               entry.target.unobserve;
-            }
-          
+            }          
         });
       }, config);
 
       views.forEach(view => {
         observer.observe(view)
+      });
+    } else {
+      window.addEventListener('load', () => {
+        views.forEach((view) => {          
+          if (view.getBoundingClientRect().top < 60) {
+            links.forEach(link => {           
+              if (link.dataset.link == view.id) {                    
+                link.classList.add('active');                  
+              } else {
+                link.classList.remove('active');
+              }             
+            })
+          } else {
+            view.classList.remove('active');
+          }
+        });
+      });
+      window.addEventListener('scroll', () => {
+        views.forEach((view) => {          
+          if (view.getBoundingClientRect().top < 200) {
+            links.forEach(link => {           
+              if (link.dataset.link == view.id) {                    
+                link.classList.add('active');                  
+              } else {
+                link.classList.remove('active');
+              }             
+            })
+          } else {
+            view.classList.remove('active');
+          }
+        });
       });
     }
   }
