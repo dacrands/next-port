@@ -20,6 +20,9 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+// ============
+//   HELPERS
+// ============  
 .font--light {
   font-weight: 100;
 }
@@ -34,6 +37,7 @@ body {
 
 .active {
   // text-decoration: underline !important;
+  border-bottom: 4px solid $action;
 }
 
 .button {
@@ -56,6 +60,10 @@ body {
   margin: 0 auto;
 }
 
+// ============
+//   NAVBAR
+// ============
+
 .navbar {
   padding: 0 1em;
   position: fixed;
@@ -77,17 +85,29 @@ body {
   justify-content: space-around;
   flex-flow: wrap;
   a {
+    border-top: 4px solid transparent;
     color: $light;
     padding: .5em;
     text-decoration: none;
     &:hover {
-      text-decoration: underline;
+      border-bottom: 4px solid $action;
     }
   }
 }
 
-.landing__container {
-  // margin-bottom: 5rem;
+@media (hover: none) {
+  .navbar__list {
+    a:hover{
+      border-bottom: inherit;
+   }
+  }  
+}
+
+// ============
+//   LANDING
+// ============
+
+.landing__container {  
   position: relative;
   min-height: 100vh;
   overflow: hidden;
@@ -199,7 +219,9 @@ body {
   }
 }
 
-
+// ============
+//   PROJECTS
+// ============
 .projects{
   color: $dark;
   // margin-top: rem;
@@ -273,6 +295,10 @@ body {
   background-position: top center;
 }
 
+
+// ============
+//   ABOUT
+// ============
 .about__container {
   // outline: 4px solid red;
   position: relative;
@@ -351,6 +377,11 @@ body {
   }
 }
 
+
+
+// ============
+//   CONTACT
+// ============
 .contact {
   position: relative;
   max-width: 500px;
@@ -385,6 +416,9 @@ body {
   }
 }
 
+// ============
+//   FOOTER
+// ============
 .footer {      
   background: $dark;
   color: $light;
@@ -414,6 +448,9 @@ body {
   }
 }
 
+// ============
+//   MEDIA
+// ============
 @media(max-width:1200px) {
   .about__container {
     padding-top: 10rem;
