@@ -13,8 +13,7 @@ class Nav extends Component {
 
     if ('IntersectionObserver' in window &&
     'IntersectionObserverEntry' in window &&
-    'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
-    // load polyfill now    
+    'intersectionRatio' in window.IntersectionObserverEntry.prototype) { 
       let observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {            
             if (entry.intersectionRatio > 0.25) {
@@ -49,6 +48,7 @@ class Nav extends Component {
           }
         });
       });
+      
       window.addEventListener('scroll', () => {
         views.forEach((view) => {          
           if (view.getBoundingClientRect().top < 200) {

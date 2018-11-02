@@ -27,9 +27,7 @@ As a front-end developer, I focus on accessibility, performance, and responsive-
             <div className="mouse__container">
               <div className="line" />
               <div className="wheel" />
-            </div>
-            <p>Scroll</p>
-        
+            </div>                    
           {/* <a href="#projects">
             Portfolio &rsaquo;
           </a>
@@ -37,7 +35,7 @@ As a front-end developer, I focus on accessibility, performance, and responsive-
             Blog &rsaquo;
           </a> */}
         </button>
-      
+        <p>Scroll</p>
     </div>
   </div>
 );

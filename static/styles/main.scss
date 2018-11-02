@@ -33,7 +33,7 @@ body {
 }
 
 .active {
-  text-decoration: underline !important;
+  // text-decoration: underline !important;
 }
 
 .button {
@@ -149,15 +149,7 @@ body {
   border: 2px solid $action;  
   border-radius: 40px;  
   background: none;  
-  cursor: pointer;
-  p {
-    position: absolute;
-    margin-left: -100%;
-    margin-top: 0;
-    animation: scroll 2s infinite;
-    text-align: center;
-  }
-  
+  cursor: pointer;  
 }
 
 .mouse__container {
