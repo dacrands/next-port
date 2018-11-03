@@ -1,5 +1,15 @@
-const Landing = () => (
-  <div className="landing__container">
+import React, { Component } from 'react';
+
+class Landing extends Component {
+
+  scrollInto() {
+    const projects = document.querySelector('#projects');
+    projects.scrollIntoView({behavior:"smooth", block: "start"});
+  }
+
+  render() {
+    return (
+      <div className="landing__container">
     <div className="landing__skew" />
     <div className="landing view" id="home">
       <div>
@@ -9,24 +19,19 @@ const Landing = () => (
 As a front-end developer, I focus on accessibility, performance, and responsive-design.
           As a back-end developer, I am all about security.
         </p>
-
       
       </div>
-          <button className="mouse">
+          <button className="mouse" onClick={this.scrollInto.bind(this)}>
             <div className="mouse__container">
               <div className="line" />
               <div className="wheel" />
             </div>                    
-          {/* <a href="#projects">
-            Portfolio &rsaquo;
-          </a>
-          <a href="https://dacrands.github.io">
-            Blog &rsaquo;
-          </a> */}
         </button>
         <p>Scroll</p>
     </div>
   </div>
-);
+    );
+  }
+}
 
 export default Landing;
