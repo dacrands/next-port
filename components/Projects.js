@@ -99,41 +99,20 @@ const Projects = () => (
           <h3>Personal Blog</h3>
           <p>
             <em>
-
-
               Responsive Web Design (no CSS libraries),
-                        Semantic HTML, ARIA, React static-site, styled-components
-              
-              
+                        Semantic HTML, ARIA, React static-site, styled-components,
+                        Markdown CMS                            
             </em>
           </p>
           <p>
-            GatsbyJS
-
-
-
-build hosted on
-
-         gitpages.
-
-
+            Personal blog where I chronicle my programming journey.            
           </p>
           <p>
-
-
-            Features a
-
-            markdown blog
-            {' '}
-
-
-            that
-                        supports
-                        YAML front matter.
-            
-            
+          GatsbyJS build hosted on gitpages. 
+          Features a markdown blog that supports
+                        YAML front matter.                      
           </p>
-          <a href="">
+          <a href="https://dacrands.github.io">
 
 
             GatbsyJS Blog
@@ -167,25 +146,12 @@ build hosted on
             </em>
           </p>
           <p>
-            React
-
-
-
-and
-
-          Redux
-application Features a markdown blog
-
-
-that
-            supports
-
-            YAML front matter
-
-
-.
-
-
+          The NYT API allows you to access their archives, which contains
+                                            articles dating back to the 19<sup>th</sup> century.
+          </p>
+          <p>
+          Set a custom year range between the years 1900 and 2018
+                      and read hundreds of article abstracts from a random month.
           </p>
           <a href="">
 
