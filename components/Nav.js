@@ -16,6 +16,8 @@ class Nav extends Component {
       linksObj[link.dataset.link] = link;      
     });
 
+    
+
     // if ('IntersectionObserver' in window &&
     // 'IntersectionObserverEntry' in window &&
     // 'intersectionRatio' in window.IntersectionObserverEntry.prototype) { 
@@ -40,14 +42,35 @@ class Nav extends Component {
     // } else {
       window.addEventListener('load', () => {
         views.forEach((view) => {                    
-          if (view.getBoundingClientRect().top < 60) {
+          if (window.scrollY < 1 && view.getBoundingClientRect().top < 60) {
             linksObj[view.id].classList.add('active')
             return;
+          } else {
+            if (view.getBoundingClientRect().top < 200) {
+              links.forEach(link => {           
+                if (link.dataset.link == view.id) {                    
+                  link.classList.add('active');                  
+                } else {
+                  link.classList.remove('active');
+                }             
+              })
+            }
           }
         });
       });
       
       window.addEventListener('scroll', () => {
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+          links.forEach(link => {   
+                 
+            if (link.dataset.link === "contact") {                                     
+              link.classList.add('active');                  
+            } else {
+              link.classList.remove('active');
+            }             
+          })
+          return;
+        }
         views.forEach((view) => {          
           if (view.getBoundingClientRect().top < 200) {
             links.forEach(link => {           
