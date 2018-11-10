@@ -11,6 +11,14 @@ class Nav extends Component {
     let linksObj = {}
     const links = document.querySelectorAll('.navbar__list a')    
     const views = document.querySelectorAll('.view')
+    const navbarMenu = document.querySelectorAll('.navbar__menu')
+    const navbarList = document.querySelectorAll('.navbar__list')
+
+    console.log(navbarList[0].clas)
+    
+    navbarMenu[0].addEventListener('click', () => {
+      navbarList[0].classList.toggle('show');
+    });
 
     links.forEach(link => {    
       linksObj[link.dataset.link] = link;      
@@ -96,6 +104,9 @@ class Nav extends Component {
           <Link href="#contact"><a data-link="contact">Contact</a></Link>
           <a href="https://dacrands.github.io/" target="_blank" rel="noopener noreferrer">Blog</a>
         </ul>
+        <button className="navbar__menu">
+          <img src="../static/images/menu.svg" alt="nav menu" />
+        </button>
       </nav>
     );
   }
