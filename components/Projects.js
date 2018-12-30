@@ -19,8 +19,8 @@ const Projects = () => (
               Email Authentication,
                         JSON Web Tokens, Postgresql, Heroku Hosting,
                          JinJa Templates
-              
-              
+
+
             </em>
           </p>
           <p>Once users verify their email address, they will have access to the SmartFrame — an app where they will be able to do the following:</p>
@@ -29,26 +29,27 @@ const Projects = () => (
             <li>Easily add/remove stocks to appear in the scrolling stock-ticker</li>
             <li>Use Youtube embed codes to asynchronously set a background-video</li>
           </ul>
-          <a href="https://flaskframe.herokuapp.com">
+          <div className="card__links">
+            <a href="https://flaskframe.herokuapp.com">
 
 
-            FlaskFrame
-            
-            <span>&rsaquo;</span>
-          </a>
-          {/* <br /> */}
-          <a href="">
+              FlaskFrame
+              
+<span>&rsaquo;</span>
+            </a>            
+            <a href="https://github.com/dacrands/flask-smart-monitor">
 
 
-            Github Repo
-            
-            <span>&rsaquo;</span>
-          </a>
+              Github Repo
+              
+<span>&rsaquo;</span>
+            </a>
+          </div>
+
         </div>
       </div>
       <div className="card">
-        <div style={{ backgroundImage: 'url(https://i.imgur.com/imp5c6G.jpg)' }} className="card__img">
-          {/* <img src="https://i.imgur.com/imp5c6G.jpg" alt="flask frame" /> */}
+        <div style={{ backgroundImage: 'url(https://i.imgur.com/imp5c6G.jpg)' }} className="card__img">          
         </div>
         <div>
           <h3>Bergen STEM</h3>
@@ -58,8 +59,8 @@ const Projects = () => (
 
               Responsive Web Design (no CSS libraries),
                         Semantic HTML, ARIA, Ajax, Asset lazy-loading
-              
-              
+
+
             </em>
           </p>
           <p>
@@ -74,19 +75,19 @@ const Projects = () => (
 
 
           </p>
-          <a href="">
+          <a href="https://www.bergenstem.com/">
 
 
             Bergen STEM
-            
+
             <span>&rsaquo;</span>
           </a>
           {/* <br /> */}
-          <a href="">
+          <a href="https://github.com/dacrands/bergen-reactpack">
 
 
             Github Repo
-            
+
             <span>&rsaquo;</span>
           </a>
         </div>
@@ -101,30 +102,30 @@ const Projects = () => (
             <em>
               Responsive Web Design (no CSS libraries),
                         Semantic HTML, ARIA, React static-site, styled-components,
-                        Markdown CMS                            
+                        Markdown CMS
             </em>
           </p>
           <p>
-            Personal blog where I chronicle my programming journey.            
+            Personal blog where I chronicle my programming journey.
           </p>
           <p>
-          GatsbyJS build hosted on gitpages. 
-          Features a markdown blog that supports
-                        YAML front matter.                      
+            GatsbyJS build hosted on gitpages.
+            Features a markdown blog that supports
+                          YAML front matter.
           </p>
           <a href="https://dacrands.github.io">
 
 
             GatbsyJS Blog
-            
+
             <span>&rsaquo;</span>
           </a>
           {/* <br /> */}
-          <a href="">
+          <a href="https://github.com/dacrands/gatsby-blog">
 
 
             Github Repo
-            
+
             <span>&rsaquo;</span>
           </a>
         </div>
@@ -141,31 +142,31 @@ const Projects = () => (
 
               React, Redux, Responsive Web Design (no CSS libraries),
                         Semantic HTML, ARIA, React static-site, styled-components
-              
-              
+
+
             </em>
           </p>
           <p>
-          The NYT API allows you to access their archives, which contains
+            The NYT API allows you to access their archives, which contains
                                             articles dating back to the 19<sup>th</sup> century.
           </p>
           <p>
-          Set a custom year range between the years 1900 and 2018
-                      and read hundreds of article abstracts from a random month.
+            Set a custom year range between the years 1900 and 2018
+                        and read hundreds of article abstracts from a random month.
           </p>
-          <a href="">
+          <a href="https://times.dcrands.com/">
 
 
             NYT App
-            
+
             <span>&rsaquo;</span>
           </a>
           {/* <br /> */}
-          <a href="">
+          <a href="https://github.com/dacrands/times-app">
 
 
             Github Repo
-            
+
             <span>&rsaquo;</span>
           </a>
         </div>

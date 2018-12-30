@@ -308,14 +308,14 @@ body {
     margin-top: 0;
   }
   a {
-    word-break: keep-all;
+    text-decoration: none;
+    white-space: pre;
     span {
       display: inline-block;      
       transition: all 200ms ease;
       margin-right: 1.5rem;
       margin-bottom: 2rem;
-    }
-    text-decoration: none;
+    }    
     &:hover {
       span {
         // color: rgb(0, 153, 255);

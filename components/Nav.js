@@ -13,8 +13,6 @@ class Nav extends Component {
     const views = document.querySelectorAll('.view')
     const navbarMenu = document.querySelectorAll('.navbar__menu')
     const navbarList = document.querySelectorAll('.navbar__list')
-
-    console.log(navbarList[0].clas)
     
     navbarMenu[0].addEventListener('click', () => {
       navbarList[0].classList.toggle('show');
@@ -111,9 +109,5 @@ class Nav extends Component {
     );
   }
 }
-
-// const Nav = () => (
-  
-// );
 
 export default Nav;
