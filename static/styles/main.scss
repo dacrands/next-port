@@ -428,8 +428,6 @@ body {
   position: relative;
   max-width: 500px;
   margin: 0 auto;
-  // outline: 4px solid red;
-  // background: $action;
   color: $dark;
   min-height: 60vh;
   margin-bottom: 2rem;
@@ -488,8 +486,7 @@ body {
     padding: 0;
     list-style: none;    
   }
-  li {
-    margin-bottom: 1rem;
+  li {    
     display: inline;
   }
 }
@@ -511,8 +508,6 @@ body {
 }
 
 @media (max-width:400px) {
-
-
   .about__skew,
   .about__container {
     min-height: 110vh

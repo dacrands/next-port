@@ -6,8 +6,7 @@ const Projects = () => (
     </header>
     <section>
       <div className="card">
-        <div style={{ backgroundImage: 'url(https://i.imgur.com/IT2RdUk.jpg)' }} className="card__img">
-          {/* <img src="https://i.imgur.com/mXVg5NM.jpg" alt="flask frame" /> */}
+        <div style={{ backgroundImage: 'url(https://i.imgur.com/IT2RdUk.jpg)' }} className="card__img">          
         </div>
 
         <div>
