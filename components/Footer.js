@@ -2,7 +2,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="">
       <ul>
-        <li><a href="">Github</a></li>
+        <li><a href="https://github.com/dacrands">Github</a></li>
         <li><a href="https://dacrands.github.io">Blog</a></li>        
         <li><a href="../static/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
         <li><a href="mailto:davecrands@gmail.com">Email</a></li>
