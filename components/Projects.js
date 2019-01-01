@@ -17,7 +17,7 @@ const Projects = () => (
 
               Email Authentication,
                         JSON Web Tokens, Postgresql, Heroku Hosting,
-                         JinJa Templates
+                         JinJa2 Templates
 
 
             </em>
@@ -56,23 +56,20 @@ const Projects = () => (
             <em className="less--dark">
 
 
-              Responsive Web Design (no CSS libraries),
-                        Semantic HTML, ARIA, Ajax, Asset lazy-loading
+              React, Webpack, Fetch-API
 
 
             </em>
           </p>
           <p>
             React application designed and
-            built for the STEM Department at Bergen Community College,
-            built using Webpack.t
+            built for the STEM Department at Bergen Community College.
+            Collaborated with backend-developer to 
+            create a site that showcases student projects, STEM events, and scholarship opportunities.
           </p>
           <p>
-
-
-            Collaborated with backend-developer to create a site that showcases student projects, STEM events, and scholarship opportunities.
-
-
+            Achieves responsive web-design via custom CSS. Implements the fetch API to
+            return student project information.             
           </p>
           <a href="https://www.bergenstem.com/">
 
@@ -81,7 +78,7 @@ const Projects = () => (
 
             <span>&rsaquo;</span>
           </a>
-          {/* <br /> */}
+
           <a href="https://github.com/dacrands/bergen-reactpack">
 
 
@@ -99,9 +96,7 @@ const Projects = () => (
           <h3>Personal Blog</h3>
           <p>
             <em>
-              Responsive Web Design (no CSS libraries),
-                        Semantic HTML, ARIA, React static-site, styled-components,
-                        Markdown CMS
+              GatbsyJS, styled-components, Markdown CMS
             </em>
           </p>
           <p>
@@ -130,8 +125,7 @@ const Projects = () => (
         </div>
       </div>
       <div className="card">
-        <div style={{ backgroundImage: 'url(https://i.imgur.com/7SIlmAJ.jpg)' }} className="card__img">
-          {/* <img src="https://i.imgur.com/a7pKgWc.jpg" alt="flask frame" /> */}
+        <div style={{ backgroundImage: 'url(https://i.imgur.com/7SIlmAJ.jpg)' }} className="card__img">          
         </div>
         <div>
           <h3>New York Times App</h3>
@@ -139,19 +133,17 @@ const Projects = () => (
             <em>
 
 
-              React, Redux, Responsive Web Design (no CSS libraries),
-                        Semantic HTML, ARIA, React static-site, styled-components
+              React, Redux, Redux-Thunk
 
 
             </em>
           </p>
           <p>
-            The NYT API allows you to access their archives, which contains
-                                            articles dating back to the 19<sup>th</sup> century.
+          Set a year range between 1900 and 2018 and browse articles from another era, view the New
+          York Times Best-Sellers, read the most-emailed stories.
           </p>
           <p>
-            Set a custom year range between the years 1900 and 2018
-                        and read hundreds of article abstracts from a random month.
+            Created Flask application to proxy requests betwwen the the client and the NYT API.
           </p>
           <a href="https://times.dcrands.com/">
 
