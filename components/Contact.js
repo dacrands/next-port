@@ -2,13 +2,13 @@ const Contact = () => (
   <div className="contact view" id="contact">
     <div className="container">
       <h1 className="primary">Contact</h1>
-      <form className="form" action="">
+      <form className="form" action="https://formspree.io/davecrands@gmail.com" method="POST">
         <label htmlFor="email">
 
 
             Email
 
-          <input type="email" id="email" required />
+          <input type="email" name="email" id="email" required />
         </label>
         <label htmlFor="message">
 
@@ -19,7 +19,7 @@ const Contact = () => (
         </label>
 
         <div className="form__button">
-          <button className="button" type="submit">Send &rsaquo;</button>
+          <button className="button" name="submit" type="submit">Send &rsaquo;</button>
         </div>
       </form>
     </div>
